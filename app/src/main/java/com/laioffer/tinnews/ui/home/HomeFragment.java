@@ -13,12 +13,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.laioffer.tinnews.R;
+import com.laioffer.tinnews.databinding.FragmentHomeBinding;
 import com.laioffer.tinnews.repository.NewsRepository;
 import com.laioffer.tinnews.repository.NewsViewModelFactory;
 
 public class HomeFragment extends Fragment {
 
     private HomeViewModel viewModel;
+    private FragmentHomeBinding binding;
 
     public HomeFragment() {
         // Required empty public constructor
