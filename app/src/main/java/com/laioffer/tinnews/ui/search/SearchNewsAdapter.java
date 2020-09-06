@@ -40,7 +40,9 @@ public class SearchNewsAdapter extends RecyclerView.Adapter<SearchNewsAdapter.Se
         Article article = articles.get(position);
         holder.favoriteImageView.setImageResource(R.drawable.ic_favorite_24dp);
         holder.itemTitleTextView.setText(article.title);
-        Picasso.get().load(article.urlToImage).into(holder.itemImageView);
+        if (article != null) {
+            Picasso.get().load(article.urlToImage).into(holder.itemImageView);
+        }
     }
 
     @Override
